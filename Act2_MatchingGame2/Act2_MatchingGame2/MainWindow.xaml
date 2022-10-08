@@ -1,0 +1,45 @@
+﻿<Window x:Class="Act2_MatchingGame2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Act2_MatchingGame2"
+        mc:Ignorable="d"
+        Title="Trouvez toutes les paires de fruits" Height="450" Width="400">
+    <Grid x:Name="grdMain">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="1" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="2" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="3" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="0" Grid.Row="1" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="1" Grid.Row="1" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="2" Grid.Row="1" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="3" Grid.Row="1" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="0" Grid.Row="2" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="1" Grid.Row="2" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="2" Grid.Row="2" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="3" Grid.Row="2" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="0" Grid.Row="3" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="1" Grid.Row="3" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="2" Grid.Row="3" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" TextElement.FontSize="40" Grid.Column="3" Grid.Row="3" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Temps écoulé" TextElement.FontSize="25" Grid.ColumnSpan="4" Grid.Row="4" x:Name="txtTemps" />
+    
+    </Grid>
+</Window>
